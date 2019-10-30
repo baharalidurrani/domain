@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+* {
+  font-family: "Livvic", sans-serif;
+}
+
+.container {
+  padding: 2vw 15vw;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.hoverable:hover {
+  box-shadow: 0vw 0vw 4vw 0vw white;
+}
+
+body {
+  background: #d500f9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #d500f9, #f50057);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #d500f9, #f50057);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: linear-gradient(45deg, #d500f9 0%, #f50057 100%);
+  color: white;
+}
+
+/* flexbox */
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1vw 2vw 1vw 2vw;
+}
