@@ -1,5 +1,7 @@
 import React from "react";
 import "./footer.css";
+import GitlabLogo from "./gitlab.svg";
+import ReactLogo from "./react.svg";
 
 class Footer extends React.Component {
   render() {
@@ -14,11 +16,7 @@ class Footer extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/e/e1/GitLab_logo.svg"
-                height="40vh"
-                alt=""
-              />
+              <img src={GitlabLogo} height="40vh" alt="" />
             </a>
             <a
               href="https://cloud.google.com"
@@ -36,11 +34,7 @@ class Footer extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                height="40vh"
-                alt=""
-              />
+              <img src={ReactLogo} height="40vh" alt="" />
             </a>
           </div>
         </div>
