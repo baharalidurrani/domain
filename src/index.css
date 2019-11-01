@@ -33,10 +33,3 @@ h1 {
 .hoverable:hover {
   box-shadow: 0vw 0vw 4vw 0vw white;
 }
-
-a:link,
-a:visited {
-  text-decoration: none;
-  display: inline-block;
-  padding: 1vw 2vw 1vw 2vw;
-}

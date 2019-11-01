@@ -2,39 +2,39 @@ import React from "react";
 import "./footer.css";
 import GitlabLogo from "./gitlab.svg";
 import ReactLogo from "./react.svg";
+import CloudLogo from "./cloud.svg";
 
 class Footer extends React.Component {
   render() {
     return (
       <div className="footer">
-        <div className="content">
+        <div className="content center">
           <div className="center">
             <span>Powered By</span>
             <br />
             <a
-              href="http://gitlab.com"
+              className="powerLogo"
+              href="https://gitlab.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={GitlabLogo} height="40vh" alt="" />
+              <img src={GitlabLogo} height="40px" alt="" />
             </a>
             <a
-              href="https://cloud.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/6/61/Google_Cloud_Logo.svg"
-                height="40vh"
-                alt=""
-              />
-            </a>
-            <a
+              className="powerLogo"
               href="https://reactjs.org"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={ReactLogo} height="40vh" alt="" />
+              <img src={ReactLogo} height="40px" alt="" />
+            </a>
+            <a
+              className="powerLogo"
+              href="https://cloud.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={CloudLogo} height="40px" alt="" />
             </a>
           </div>
         </div>

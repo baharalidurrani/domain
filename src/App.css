@@ -8,7 +8,7 @@
 /* flexbox */
 .main {
   display: flex;
-  min-height: calc(100vh - 140px);
+  min-height: calc(100vh - 120px);
   flex-direction: column;
 }
 
