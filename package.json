@@ -1,6 +1,7 @@
 {
   "name": "domain",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "homepage": "https://baharalidurrani.me",
   "private": true,
   "dependencies": {
     "react": "^16.11.0",

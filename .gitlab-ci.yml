@@ -30,5 +30,5 @@ pages:
   only:
     - master # Only run on master branch
 
-include:
-  - local: "/ci/react-firebase.gitlab-ci.yml"
+#include:
+#  - local: "/ci/react-firebase.gitlab-ci.yml"
