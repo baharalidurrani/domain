@@ -2,7 +2,7 @@ import React from "react";
 import "./footer.css";
 import GitlabLogo from "./gitlab.svg";
 import ReactLogo from "./react.svg";
-import CloudLogo from "./cloud.svg";
+import FirebaseLogo from "./firebase.svg";
 
 class Footer extends React.Component {
   render() {
@@ -30,11 +30,11 @@ class Footer extends React.Component {
             </a>
             <a
               className="powerLogo"
-              href="https://cloud.google.com"
+              href="https://firebase.google.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={CloudLogo} height="40px" alt="" />
+              <img src={FirebaseLogo} height="40px" alt="" />
             </a>
           </div>
         </div>
