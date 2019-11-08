@@ -1,10 +1,13 @@
 # Using the node alpine image to build the React app
+##image: node:alpine
+
+# A light weight alphine based docker container that contains the required “firebase-tools” pre-installed in it
 image: rambabusaravanan/firebase
 
 # Announce the URL as per CRA docs
 # https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#advanced-configuration
-#variables:
-#  PUBLIC_URL: /domain
+##variables:
+  ##PUBLIC_URL: /domain
 # Cache node modules - speeds up future builds
 cache:
   paths:
@@ -21,6 +24,10 @@ pages:
   script:
     - npm install # Install all dependencies
     - npm run build --prod # Build for prod
+    
+    - firebase use $PROJECT_NAME --token $FIREBASE_TOKEN
+    - firebase deploy --only hosting -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID @ Hash ${CI_COMMIT_SHA:0:7}" --token $FIREBASE_TOKEN
+
     - cp public/index.html public/404.html # Not necessary, but helps with https://medium.com/@pshrmn/demystifying-single-page-applications-3068d0555d46
     - mv public _public # CRA and gitlab pages both use the public folder. Only do this in a build pipeline.
     - mv build public # Move build files to public dir for Gitlab Pages
