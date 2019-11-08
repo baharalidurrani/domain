@@ -20,12 +20,14 @@ function App() {
           <div className="center">
             <Button
               href="https://twitter.com/BaharAliDurrani"
+              target="_blank"
               name="Follow @BaharAliDurrani for updates!"
             ></Button>
             <br />
             <br />
             <Button
-              href="https://gitlab.com/baharalidurrani/resume/raw/master/assets/pdf/Resume.pdf?inline=false"
+              href="https://gitlab.com/baharalidurrani/resume/raw/master/assets/pdf/Resume.pdf"
+              target="_blank"
               name="Download Bahar's Resume"
             ></Button>
           </div>
