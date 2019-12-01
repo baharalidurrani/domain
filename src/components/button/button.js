@@ -7,7 +7,8 @@ class Button extends React.Component {
       <a
         className="btn hoverable center"
         href={this.props.href}
-        target={this.props.target}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         {this.props.name}
       </a>

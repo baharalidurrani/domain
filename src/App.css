@@ -22,3 +22,24 @@
   background-image: linear-gradient(45deg, #d500f9 0%, #f50057 100%);
   color: white;
 }
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 4px solid white;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+legend {
+  padding: 1vw;
+  margin: 0;
+  /* margin-bottom: 0px;
+  margin-left: 16px; */
+}
+
+.noMargin {
+  margin: 0;
+}

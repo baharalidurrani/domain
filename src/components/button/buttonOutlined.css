@@ -1,0 +1,21 @@
+.btnOut {
+  transition: 0.1s;
+  border-radius: 2vw;
+  padding: 1vw;
+  margin: 1vw;
+  box-shadow: 1vw 1vw 2vw 0vw rgba(0, 0, 0, 0.2);
+  background: #d500f9;
+  color: white;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 20px;
+}
+.btnOut:link,
+.btnOut:visited {
+  background-color: #d500f9;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1vw 2vw 1vw 2vw;
+}
