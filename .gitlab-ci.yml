@@ -22,7 +22,7 @@ firebase:
     - npm run build --prod # Build for prod
     #firebase deploy
     - npm install -g firebase-tools
-    - firebase use $PROJECT_NAME --token $FIREBASE_TOKEN
+    # - firebase use $PROJECT_NAME --token $FIREBASE_TOKEN
     - firebase deploy --only hosting -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID @ Hash ${CI_COMMIT_SHA:0:7}" --token $FIREBASE_TOKEN
   only:
     - master # Only run on master branch
