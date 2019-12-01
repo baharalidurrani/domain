@@ -19,6 +19,9 @@ code {
 .container {
   padding: 2vw 15vw;
 }
+.containerLarge {
+  padding: 1vw 5vw;
+}
 
 h1 {
   font-size: 50px;

@@ -33,7 +33,7 @@ function App() {
           <h2 className="center">Software Engineer</h2>
           <br />
           <h3 className="center">MERN Developer | DevOps Engineer</h3>
-          <div className="container">
+          <div className="containerLarge">
             <fieldset>
               <legend>
                 <h2 className="noMargin">Skills</h2>
