@@ -53,10 +53,6 @@ function App() {
                 <h2 className="noMargin">Resume</h2>
               </legend>
               <Button
-                href="https://novoresume.com/a/baharalidurrani.1"
-                name="View Online"
-              ></Button>
-              <Button
                 href="https://gitlab.com/baharalidurrani/resume/raw/master/assets/pdf/Resume.pdf"
                 name="Download PDF"
               ></Button>
