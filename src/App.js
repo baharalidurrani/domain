@@ -18,7 +18,7 @@ function App() {
     { name: "NodeJS", url: "https://nodejs.org/" },
     { name: "ExpressJS", url: "https://expressjs.com/" },
     { name: "MongoDB", url: "https://www.mongodb.com/" },
-    { name: "Git", url: "https://git-scm.com/" },
+    { name: "git", url: "https://git-scm.com/" },
     { name: "GitLab", url: "https://gitlab.com/" },
     { name: "CI/CD", url: "https://docs.gitlab.com/ee/ci/" },
     { name: "Heroku", url: "https://www.heroku.com/" },
