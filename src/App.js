@@ -38,8 +38,12 @@ function App() {
               <legend>
                 <h2 className="noMargin">Skills</h2>
               </legend>
-              {skills.map(skill => (
-                <ButtonOut href={skill.url} name={skill.name}></ButtonOut>
+              {skills.map((skill, i) => (
+                <ButtonOut
+                  href={skill.url}
+                  name={skill.name}
+                  key={i}
+                ></ButtonOut>
               ))}
             </fieldset>
           </div>
