@@ -9,11 +9,15 @@ function App() {
     { name: "GNU/Linux", url: "https://www.linuxfoundation.org/" },
     { name: "HTML", url: "https://github.com/whatwg" },
     { name: "CSS", url: "https://www.w3.org/Style/CSS/" },
+    { name: "EJS Engine", url: "https://ejs.co/" },
     {
       name: "JavaScript",
       url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
-    { name: "EJS Engine", url: "https://ejs.co/" },
+    {
+      name: "TypeScript",
+      url: "https://www.typescriptlang.org"
+    },
     { name: "ReactJS", url: "https://reactjs.org/" },
     { name: "NodeJS", url: "https://nodejs.org/" },
     { name: "ExpressJS", url: "https://expressjs.com/" },
@@ -32,7 +36,7 @@ function App() {
           <h1 className="center">Bahar Ali (Durrani)</h1>
           <h2 className="center">Software Engineer</h2>
           <br />
-          <h3 className="center">MERN Developer | DevOps Engineer</h3>
+          <h3 className="center">Full Stack (MERN) | DevOps Engineer</h3>
           <div className="containerLarge">
             <fieldset>
               <legend>
