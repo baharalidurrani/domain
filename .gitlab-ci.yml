@@ -36,7 +36,7 @@ pagesDev:
     - yarn install # Install all dependencies
     - yarn run build --prod # Build for prod
     # Gitlab Pages
-    - mv .build public
+    - mv build public
   artifacts:
     paths:
       - public
