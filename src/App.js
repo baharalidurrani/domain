@@ -1,34 +1,11 @@
 import React from "react";
 import "./App.css";
-import Button from "./components/button/button";
-import ButtonOut from "./components/button/buttonOutlined";
-import Footer from "./components/footer/footer";
+import Button from "./components/button/Button";
+import Footer from "./components/footer/Footer";
+import Fieldset from "./components/Fieldset";
+import Skills from "./components/Skills";
 
 function App() {
-  var skills = [
-    { name: "GNU/Linux", url: "https://www.linuxfoundation.org/" },
-    { name: "HTML", url: "https://github.com/whatwg" },
-    { name: "CSS", url: "https://www.w3.org/Style/CSS/" },
-    { name: "EJS Engine", url: "https://ejs.co/" },
-    {
-      name: "JavaScript",
-      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-    },
-    {
-      name: "TypeScript",
-      url: "https://www.typescriptlang.org"
-    },
-    { name: "ReactJS", url: "https://reactjs.org/" },
-    { name: "NodeJS", url: "https://nodejs.org/" },
-    { name: "ExpressJS", url: "https://expressjs.com/" },
-    { name: "MongoDB", url: "https://www.mongodb.com/" },
-    { name: "git", url: "https://git-scm.com/" },
-    { name: "GitLab", url: "https://gitlab.com/" },
-    { name: "CI/CD", url: "https://docs.gitlab.com/ee/ci/" },
-    { name: "Heroku", url: "https://www.heroku.com/" },
-    { name: "Firebase", url: "https://firebase.google.com/" }
-    // { name: "", url: "" },
-  ];
   return (
     <div className="App">
       <div className="main">
@@ -38,29 +15,17 @@ function App() {
           <br />
           <h3 className="center">Full Stack (MERN) | DevOps Engineer</h3>
           <div className="containerLarge">
-            <fieldset>
-              <legend>
-                <h2 className="noMargin">Skills</h2>
-              </legend>
-              {skills.map((skill, i) => (
-                <ButtonOut
-                  href={skill.url}
-                  name={skill.name}
-                  key={i}
-                ></ButtonOut>
-              ))}
-            </fieldset>
+            <Fieldset title="Skills">
+              <Skills />
+            </Fieldset>
           </div>
           <div className="center">
-            <fieldset>
-              <legend>
-                <h2 className="noMargin">Resume</h2>
-              </legend>
+            <Fieldset title="Resume">
               <Button
                 href="https://gitlab.com/baharalidurrani/resume/raw/master/assets/pdf/Resume.pdf"
                 name="Download PDF"
               ></Button>
-            </fieldset>
+            </Fieldset>
           </div>
         </div>
         <br />
