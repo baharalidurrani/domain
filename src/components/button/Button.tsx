@@ -1,7 +1,12 @@
 import React from "react";
 import "./Button.css";
 
-export default function Button(props) {
+interface Props {
+  href: string;
+  name: string;
+}
+
+export default function Button(props: Props) {
   return (
     <a
       className="btn hoverable center"

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import ButtonOut from ".././components/button/ButtonOutlined";
+import ButtonOut from "./button/ButtonOutlined";
 
 export default function Skills() {
-  let data = [
+  const data = [
     { name: "GNU/Linux", url: "https://www.linuxfoundation.org/" },
     { name: "Docker", url: "https://www.docker.com/" },
     { name: "HTML", url: "https://github.com/whatwg" },

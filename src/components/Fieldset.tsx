@@ -1,6 +1,11 @@
 import React from "react";
 
-export default function Fieldset(props) {
+interface Props {
+  title: string;
+  children: React.ReactNode;
+}
+
+export default function Fieldset(props: Props) {
   return (
     <fieldset>
       <legend>
