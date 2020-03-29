@@ -3,8 +3,8 @@ image: node:alpine
 
 # Announce the URL as per CRA docs
 # https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#advanced-configuration
-##variables:
-##PUBLIC_URL: /domain
+variables:
+  PUBLIC_URL: /domain
 # Cache node modules - speeds up future builds
 cache:
   paths:
@@ -32,14 +32,18 @@ firebaseMas:
 pagesDev:
   stage: deploy-dev
   script:
+    # find and replace in files
+    - sed -i 's~https://baharalidurrani.me~.~g' public/manifest.json
+    - sed -i 's~"homepage": "https://baharalidurrani.me",~~g' package.json
     # - apk add yarn
     - yarn install # Install all dependencies
     - yarn run build --prod # Build for prod
     # Gitlab Pages
-    - rm -rf public
-    - mv build public
+    - cp public/index.html public/404.html # Not necessary, but helps with https://medium.com/@pshrmn/demystifying-single-page-applications-3068d0555d46
+    - mv public _public # CRA and gitlab pages both use the public folder. Only do this in a build pipeline.
+    - mv build public # Move build files to public dir for Gitlab Pages
   artifacts:
     paths:
-      - public
+      - public # The built files for Gitlab Pages to serve
   only:
     - development # Only run on development branch
