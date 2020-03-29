@@ -27,6 +27,7 @@ export default function Skills() {
     { name: "Firebase", url: "https://firebase.google.com/" }
     // { name: "", url: "" },
   ];
+  // eslint-disable-next-line
   const [skills, setskills] = useState(data);
 
   return (
