@@ -46,7 +46,8 @@ pagesDev:
   stage: deploy
   script:
     # find and replace in files
-    - sed -i 's~https://baharalidurrani.me~.~g' public/manifest.json
+    # do not use, it may overwrite the files in the repo
+    # - sed -i 's~https://baharalidurrani.me~.~g' public/manifest.json
     # - sed -i 's~"homepage": "https://baharalidurrani.me",~~g' package.json
     # - apk add yarn
     - yarn install # Install all dependencies
