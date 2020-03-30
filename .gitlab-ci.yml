@@ -3,8 +3,8 @@ image: node:alpine
 
 # Announce the URL as per CRA docs
 # https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#advanced-configuration
-##variables:
-##PUBLIC_URL: /domain
+variables:
+  PUBLIC_URL: /domain
 # Cache node modules - speeds up future builds
 cache:
   paths:
@@ -12,12 +12,12 @@ cache:
   key: "$CI_REPOSITORY_URL" # no need if not node project
 
 # Name the stages involved in the pipeline
+# i.e jobs that run sequence
 stages:
-  - deploy-master
-  - deploy-dev
+  - deploy
 
 firebaseMas:
-  stage: deploy-master
+  stage: deploy
   script:
     # - apk add yarn
     - yarn install # Install all dependencies
@@ -30,7 +30,7 @@ firebaseMas:
     - master # Only run on master branch
 
 firebaseDev:
-  stage: deploy-dev
+  stage: deploy
   script:
     # - apk add yarn
     - yarn install # Install all dependencies
@@ -41,3 +41,22 @@ firebaseDev:
     - firebase deploy --only hosting -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID @ Hash ${CI_COMMIT_SHA:0:7} at dev"
   only:
     - development # Only run on development branch
+
+pagesDev:
+  stage: deploy
+  script:
+    # find and replace in files
+    - sed -i 's~https://baharalidurrani.me~.~g' public/manifest.json
+    # - sed -i 's~"homepage": "https://baharalidurrani.me",~~g' package.json
+    # - apk add yarn
+    - yarn install # Install all dependencies
+    - yarn run build --prod # Build for prod
+    # Gitlab Pages
+    - cp public/index.html public/404.html # Not necessary, but helps with https://medium.com/@pshrmn/demystifying-single-page-applications-3068d0555d46
+    - mv public _public # CRA and gitlab pages both use the public folder. Only do this in a build pipeline.
+    - mv build public # Move build files to public dir for Gitlab Pages
+  artifacts:
+    paths:
+      - public # The built files for Gitlab Pages to serve
+  only:
+    - pages # Only run on pages branch
