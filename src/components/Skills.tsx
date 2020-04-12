@@ -17,14 +17,18 @@ export default function Skills() {
       url: "https://www.typescriptlang.org"
     },
     { name: "ReactJS", url: "https://reactjs.org/" },
+    { name: "Redux", url: "https://redux.js.org/" },
     { name: "NodeJS", url: "https://nodejs.org/" },
     { name: "ExpressJS", url: "https://expressjs.com/" },
     { name: "MongoDB", url: "https://www.mongodb.com/" },
-    { name: "git", url: "https://git-scm.com/" },
     { name: "GitLab", url: "https://gitlab.com/" },
+    { name: "GitHub", url: "https://github.com/" },
     { name: "CI/CD", url: "https://docs.gitlab.com/ee/ci/" },
     { name: "Heroku", url: "https://www.heroku.com/" },
-    { name: "Firebase", url: "https://firebase.google.com/" }
+    { name: "Firebase", url: "https://firebase.google.com/" },
+    { name: "Google Cloud", url: "https://cloud.google.com/" },
+    { name: "AWS", url: "https://aws.amazon.com/" },
+    { name: "ffmpeg", url: "http://ffmpeg.org/" }
     // { name: "", url: "" },
   ];
   // eslint-disable-next-line
