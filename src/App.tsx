@@ -33,6 +33,10 @@ function App() {
                 name="Resume"
               ></Button>
               <Button
+                href="https://www.upwork.com/o/profiles/users/~012db2e3db02c12429/"
+                name="Hire Me"
+              ></Button>
+              <Button
                 href="mailto:baharalidurrani@gmail.com"
                 name="Email"
               ></Button>
