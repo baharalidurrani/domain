@@ -14,24 +14,27 @@ function App() {
           <h2 className="center">Software Engineer</h2>
           <br />
           <h3 className="center">Full Stack (MERN) | DevOps Engineer</h3>
-          <p className="containerLarge">
-            A passionate Software Engineer whose dream is to work on a highly
-            scaled application which is used by millions of users, an
-            application that is developed using the cutting edge technologies. I
-            strongly follow the conventions of a technology that I work on so
-            that my work is neat, efficient, readable & reusable. I am willing
-            to work both remotely and in person as well.
-          </p>
           <div className="containerLarge">
+            <p>
+              A passionate Software Engineer whose dream is to work on a highly
+              scaled application which is used by millions of users, an
+              application that is developed using the cutting edge technologies.
+              I strongly follow the conventions of a technology that I work on
+              so that my work is neat, efficient, readable & reusable. I am
+              willing to work both remotely and in person as well.
+            </p>
             <Fieldset title="Skills">
               <Skills />
             </Fieldset>
-          </div>
-          <div className="center">
-            <Fieldset title="Resume">
+            <br />
+            <Fieldset title="Contact">
               <Button
                 href="https://gitlab.com/baharalidurrani/resume/raw/master/assets/pdf/Resume.pdf"
-                name="Download PDF"
+                name="Resume"
+              ></Button>
+              <Button
+                href="mailto:baharalidurrani@gmail.com"
+                name="Email"
               ></Button>
             </Fieldset>
           </div>
