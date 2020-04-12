@@ -13,7 +13,7 @@ export default function Footer() {
           <br />
           <a
             className="powerLogo"
-            href="https://gitlab.com"
+            href="https://gitlab.com/baharalidurrani/domain"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -39,7 +39,7 @@ export default function Footer() {
       </div>
       <div className="copyRight">
         <small className="center">
-          Copyright &#9400; {new Date().getFullYear()} Bahar Ali Durrani. All
+          Copyright &#9400; {new Date().getFullYear()} Bahar Ali Dürrani. All
           Rights Reserved.
         </small>
       </div>
