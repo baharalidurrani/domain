@@ -27,7 +27,7 @@ function App() {
               <Skills />
             </Fieldset>
             <br />
-            <Fieldset title="Contact">
+            <Fieldset title="Reach Out">
               <Button
                 href="https://gitlab.com/baharalidurrani/resume/raw/master/assets/pdf/Resume.pdf"
                 name="Resume"
