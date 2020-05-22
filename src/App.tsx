@@ -3,7 +3,9 @@ import "./App.css";
 import Button from "./components/button/Button";
 import Footer from "./components/footer/Footer";
 import Fieldset from "./components/Fieldset";
-import Skills from "./components/Skills";
+import LinkGrid from "./components/LinkGrid";
+import skills from "./static/skills";
+import interests from "./static/interests";
 
 function App() {
   return (
@@ -23,8 +25,12 @@ function App() {
               so that my work is neat, efficient, readable & reusable. I am
               willing to work both remotely and in person as well.
             </p>
-            <Fieldset title="Skills">
-              <Skills />
+            <Fieldset title="Current Skills">
+              <LinkGrid data={skills} />
+            </Fieldset>
+            <br />
+            <Fieldset title="Future Goals">
+              <LinkGrid data={interests} />
             </Fieldset>
             <br />
             <Fieldset title="Contact">
