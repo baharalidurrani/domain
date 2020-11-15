@@ -5,7 +5,6 @@ export default [
   { name: "WebAssembly", url: "https://webassembly.org/" },
   { name: "Go", url: "https://golang.org/" },
   { name: "Vue", url: "https://vuejs.org/" },
-  { name: "Angular", url: "https://angular.io/" },
   { name: "Deep Learning", url: "https://wikipedia.org/wiki/Deep_learning" },
   { name: "TensorFlow", url: "https://www.tensorflow.org/" },
   { name: "MicroServices", url: "https://wikipedia.org/wiki/Microservices" },
