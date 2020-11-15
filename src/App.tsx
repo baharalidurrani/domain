@@ -15,7 +15,7 @@ function App() {
           <h1 className="center">Bahar Ali (Dürrani)</h1>
           <h2 className="center">Software Engineer</h2>
           <br />
-          <h3 className="center">Full Stack (MERN) | DevOps Engineer</h3>
+          <h3 className="center">Full Stack Developer | DevOps Engineer</h3>
           <div className="containerLarge">
             <p>
               A passionate Software Engineer whose dream is to work on a highly
@@ -35,7 +35,7 @@ function App() {
             <br />
             <Fieldset title="Reach Out">
               <Button
-                href="https://gitlab.com/baharalidurrani/resume/raw/master/assets/pdf/Resume.pdf"
+                href="https://gitlab.com/baharalidurrani/resume/raw/master/assets/pdf/bahar-ali.pdf"
                 name="Resume"
               ></Button>
               <Button
